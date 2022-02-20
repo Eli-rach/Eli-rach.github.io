@@ -1,0 +1,23 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+
+nav {
+    background-color: rgb(10, 177, 219); 
+    padding: 20px 0px; 
+    border: none;
+    color:aliceblue;
+}
+
+.navButton{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    color: aliceblue;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: background-color 300ms ease-in-out;
+}
+.navButton:hover{
+    background-color: rgb(14, 99, 121);
+}
