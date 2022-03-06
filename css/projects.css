@@ -106,10 +106,6 @@ Dark Blue #5FA1D3
     }
 }
 
-
-
-
-@media screen and (min-width: 400px){
     .body{
 
         display: grid;
@@ -137,4 +133,3 @@ Dark Blue #5FA1D3
     .button{
         margin-top: 3%;
     }
-}
