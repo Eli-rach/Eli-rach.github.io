@@ -74,37 +74,7 @@ Dark Blue #5FA1D3
     border-radius:10%
 }
 
-@media screen and (max-width: 400px){
-    .body{
-        background-color: white;
-        display: grid;
-        grid-template-columns: 10% 80% 10%;
-    }
-
-    .outline{
-        grid-column: 2;
-        background-color: #b7fcfc;
-    }
-
-    .projectContainer{
-        background-color: #b7fcfc;
-        margin: 0 10%;
-        display: flex;
-        flex-direction: column;
-        row-gap: 30px;
-
-    }
-
-    .projectHold{
-        margin-top: 10px;
-        background-color: #4e4e4e;
-        columns: 10fr;
-        border-radius: 5%;
-        color:rgb(211, 211, 211);
-        
-    }
-}
-@media screen and (min-width: 400px){
+@media screen and (min-width: 800px){
 
     .body{
 
@@ -132,5 +102,36 @@ Dark Blue #5FA1D3
     
     .button{
         margin-top: 3%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .body{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    .outline{
+        grid-column: 2;
+        background-color: #b7fcfc;
+    }
+
+    .projectContainer{
+        background-color: #b7fcfc;
+        margin: 0 10%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+    }
+
+    .projectHold{
+        margin-top: 10px;
+        background-color: #4e4e4e;
+        columns: 10fr;
+        border-radius: 5%;
+        color:rgb(211, 211, 211);
+        
     }
 }
