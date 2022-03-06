@@ -75,7 +75,7 @@ Dark Blue #5FA1D3
     border-radius:10%
 }
 
-@media screen and (max-width: 400px){
+
     .body{
         background-color: white;
         display: grid;
@@ -104,7 +104,7 @@ Dark Blue #5FA1D3
         color:rgb(211, 211, 211);
         
     }
-}
+@media screen and (min-width: 400px){
 
     .body{
 
@@ -133,3 +133,4 @@ Dark Blue #5FA1D3
     .button{
         margin-top: 3%;
     }
+}
