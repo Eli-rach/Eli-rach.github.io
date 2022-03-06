@@ -25,10 +25,10 @@ Dark Blue #5FA1D3
 }
 
 .navBar > a {
-    font-size: 200%;
+    font-size: 150%;
     color: #DDDDDD;
     height: 6%;
-    padding: 1% 20px;
+    padding: 2% 20px;
     text-decoration: none;
     transition: color 300ms ease-in-out;
     display:inline-block;
@@ -37,18 +37,17 @@ Dark Blue #5FA1D3
 .projectHold{
     padding: 10px;
     background-color: #4e4e4e;
-    /* columns: 1fr; */
     border-radius: 5%;
     color:rgb(211, 211, 211);
     
 }
 .projectHold > h3 {
     padding:0% 8%;
-    font-size: 250%;
+    font-size: 125%;
     
 }
 .projectHold > .des {
-    font-size: 150%;
+    font-size: 75%;
     padding:0% 8%;
     height: 5%;
 }
@@ -75,7 +74,7 @@ Dark Blue #5FA1D3
     border-radius:10%
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 400px){
     .body{
         background-color: white;
         display: grid;
@@ -105,7 +104,7 @@ Dark Blue #5FA1D3
         
     }
 }
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 400px){
 
     .body{
 
