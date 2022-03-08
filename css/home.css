@@ -1,0 +1,16 @@
+#welcome{
+    
+    font-family: Kite One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 300px;
+    line-height: 434px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+    -webkit-text-stroke: 9px #424242;
+    transform: rotate(-8.46deg);
+    
+}
