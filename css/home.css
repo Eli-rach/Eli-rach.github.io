@@ -1,16 +1,100 @@
-#welcome{
-    
+*{
     font-family: Kite One;
     font-style: normal;
     font-weight: normal;
-    font-size: 300px;
-    line-height: 434px;
-    /* identical to box height */
-    
-    
-    color: #FFFFFF;
-    
-    -webkit-text-stroke: 9px #424242;
-    transform: rotate(-8.46deg);
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    /* overflow-x: hiddens; */
     
 }
+
+
+@media screen and (max-width: 1200px){
+    #welcome{
+        overflow-x: hidden;
+        font-size: 26vw;
+        margin-top: 40vh;
+        margin-bottom: 40vh;
+        text-align: center;
+        color: #FFFFFF;
+        -webkit-text-stroke: 2px #424242;
+        transform: rotate(-4.25deg);
+    
+    }
+    
+    
+    body{
+        overflow-x: hidden;
+        background: linear-gradient( -4.25deg, #EDBF49  25%, #FEDB21  25% 35%, #d19808 35% 65%, #4D78CD  65% 75%, #538DFF 75% 100%);
+    }
+    
+    a{
+        
+        font-size: 8vh;
+        position: absolute;
+        overflow-x: hidden;
+        bottom: 10vh;
+        right: 16vw;
+        color: #FFFFFF;
+        transform: rotate(-4.25deg);
+        transition: 300ms ease-out;
+    }
+    
+    a:visited{
+        color: #FFFFFF;
+    }
+    
+    a:hover{
+        color: #424242;
+    
+    }
+    
+    
+}
+
+@media screen and (min-width: 1200px){
+    #welcome{
+        overflow-x: hidden;
+        font-size: 20vw;
+        margin-top: 29.3vh;
+        margin-bottom: 29.3vh;
+        text-align: center;
+        color: #FFFFFF;
+        -webkit-text-stroke: 2px #424242;
+        transform: rotate(-4.25deg);
+    
+    }
+    
+    
+    body{
+        overflow-x: hidden;
+        background: linear-gradient( -4.25deg, #EDBF49  25%, #FEDB21  25% 35%, #d19808 35% 65%, #4D78CD  65% 75%, #538DFF 75% 100%);
+    }
+    
+    a{
+        
+        font-size: 8vh;
+        position: absolute;
+        overflow-x: hidden;
+        bottom: 12vh;
+        right: 16vw;
+        color: #FFFFFF;
+        transform: rotate(-4.25deg);
+        transition: 300ms ease-out;
+    }
+    
+    a:visited{
+        color: #FFFFFF;
+    }
+    
+    a:hover{
+        color: #424242;
+    
+    }
+    
+    
+    
+    
+}
+

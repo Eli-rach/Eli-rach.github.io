@@ -1,0 +1,30 @@
+
+    *{
+        font-family: Kite One;
+        font-style: normal;
+        font-weight: normal;
+        padding:0;
+        margin:0;
+        text-decoration: none;
+    }    
+@media screen and (min-width: 1000px){
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: linear-gradient( -18deg, #EDBF49  17%, #FEDB21  17% 20%, #d19808 20% 80%, #4D78CD 80% 83%, #538DFF 83% 100%);
+    overflow-y: hidden;
+
+}
+
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        width: 100%;
+        height: 100%;
+        /* overflow-x: hidden; */
+        background: linear-gradient( -18deg, #EDBF49  10%, #FEDB21  10% 13%, #d19808 13% 84%, #4D78CD 84% 87%, #538DFF 87% 100%);
+    }
+}
