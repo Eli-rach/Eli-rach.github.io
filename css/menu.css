@@ -23,9 +23,14 @@
         left:56vw;
         padding: 1% 4.6%;
     }
+    #JSPage{
+        position: absolute;
+        top: .5vh;
+        left:72vw;
+        padding: 1% 4.6%;
+    }
 
     .menu{
-        display: none;
         overflow-x: hidden;
         position: absolute;
         text-align: center;
@@ -40,13 +45,8 @@
         transition: 300ms ease-out;
     }
 
-    #menuButton{
-        overflow-x: hidden;
-        padding: 4%;
-        display:flex;
-    }
 
-    .menuButton > #nav1, #nav2, #nav3{
+    #menuButton > #nav1, #nav2, #nav3{
     width: 5vw;
     height: 1vh;
     background-color: #424242;
@@ -83,8 +83,14 @@
         padding: 1% 4.6%;
     }
 
+    #JSPage{
+        position: absolute;
+        top: .5vh;
+        left:90vw;
+        padding: 1% 4.6%;
+    }
+
     .menu{
-        display: none;
         overflow-x: hidden;
         position: absolute;
         text-align: center;
@@ -99,13 +105,8 @@
         transition: 300ms ease-out;
     }
 
-    #menuButton{
-        overflow-x: hidden;
-        padding-right: 100%;
-        display:flex;
-    }
 
-    .menuButton > #nav1, #nav2, #nav3{
+    #menuButton > #nav1, #nav2, #nav3{
     width: 10vw;
     height: 1vh;
     background-color: #424242;
@@ -121,9 +122,6 @@
     color: #424242;
     display: block;
 }
-
-
-
-.menuButton:active .menu {
-    display: block;
+.hidden {
+    display: none;
 }

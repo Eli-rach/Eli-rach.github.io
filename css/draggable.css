@@ -1,0 +1,17 @@
+.draggable{
+    position: absolute;
+    top:12vh;
+    left:4vw;
+    background-color: #424242;
+    padding: 3vh 2vw;
+    color:aliceblue;
+    border-radius: 20%;
+}
+
+.draggable:focus{
+    background-color: #1c1c1c;
+}
+
+.body{
+    height:100vh;
+}
