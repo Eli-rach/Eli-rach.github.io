@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( -18deg, #EDBF49  10%, #FEDB21  10% 13%, #d19808 13% 84%, #4D78CD 84% 87%, #538DFF 87% 100%);
+}
+
+#customName{
+position: absolute;
+font-size: 36px;
+left:10vw;
+top:20vh;
+}
+
+#country{
+    position: absolute;
+    font-size: 24px;
+    left:10vw;
+    top:30vh;
+}
+
+#button{
+    position: absolute;
+    font-size: 24px;
+    left:10vw;
+    top:38vh;
+
+}
+
+#button > button{
+    background-color: #FEDB21;
+    border-radius: 30%;
+    padding: 20px 10px;
+    font-size: 18px;
+}
+
+.story{
+    background: #538DFF;
+    color: #ffffff;
+    padding: 10px;
+    visibility: hidden;
+    margin: 0 10vw;
+    position: absolute;
+    top: 50vh;
+    font-size: 20px;
+
+}
