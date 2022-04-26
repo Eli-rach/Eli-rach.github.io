@@ -3,6 +3,7 @@ monsterButton.addEventListener('click', generateMonster);
 const endpoint = "https://www.dnd5eapi.co/api/monsters";
 
 function generateMonster(){
+    // document.getElementById('result').innerHTML = "<div id = 'monsterName'></div><div id = 'monsterType'></div><div id = 'AC'></div><div id = 'HP'></div><div id = 'speed'></div><div id = 'stats'></div><div id ='pt2hr></div><div id = 'pt2'><div id = 'savingThrows'></div><div><div id = 'damageVulnerabilities'></div><div id = 'damageResistances'></div><div id = 'damageImmunities'></div><div id = 'conditionImmunities'></div><div id = 'senses'></div><div id = 'languages'></div><div id = 'CR'></div></div></div><div id = 'skills'></div><div id = 'actions'></div><div id = 'LA'></div>";
     console.log("Monster button was clicked");
     let monsterSelected = document.getElementById('creatureName').value;
     monsterSelected = monsterSelected.toLowerCase();
@@ -18,11 +19,18 @@ function generateMonster(){
     .then((data) => data.json())
     .then((data) => {
         console.log(data);
+        
+        document.getElementById("result").classList.add("result")
+        document.getElementById("body").classList.add("body")
+        
         document.getElementById('monsterName').innerHTML = '<h1>' + data.name + '</h1>';
-        document.getElementById('monsterType').innerHTML = '<h3>' + data.size + " " + data.type + ', ' + data.alignment + '</h3>' +"<hr color='red'>";
-        document.getElementById('AC').innerHTML = '<p><em>Armor Class</em> '+data.armor_class+'</p>';
-        document.getElementById('HP').innerHTML = '<p><em>Hit Points</em> '+data.hit_points + " (" + data.hit_dice + ')</p>'
-        console.log('clear speed');
+
+        document.getElementById('monsterType').innerHTML = '<h3>' + data.size + "  " + data.type + ',  ' + data.alignment + '</h3>' +"<hr color='red'>";
+
+        document.getElementById('AC').innerHTML = '<p><em>Armor Class:</em>  '+data.armor_class+'</p>';
+
+        document.getElementById('HP').innerHTML = '<p><em>Hit Points:</em>  '+data.hit_points + " (" + data.hit_dice + ')</p>'
+       
         //speeds
         let movement = '<p><em>Speed</em> ' +data.speed.walk+ ' ';
         if(data.speed.swim){movement += "swim " + data.speed.swim+ " ";} 
@@ -30,14 +38,15 @@ function generateMonster(){
         if(data.speed.burrow){movement += "burrow " + data.speed.burrow + " ";}
         document.getElementById('speed').innerHTML = movement+ "</p>" + "<hr color='red'>";
         //Stat block
-        let stats ='<p id = "STR"><strong>STR</strong> ' + data.strength + ' ('+ getBonus(data.strength) +')</p>' +
-        '<p id = "DEX"><strong>DEX</strong> ' + data.dexterity  + ' ('+ getBonus(data.dexterity) +')</p>' + 
-        '<p id = "CON"><strong>CON</strong> ' + data.constitution  + ' ('+ getBonus(data.constitution) +')</p>' + 
-        '<p id = "INT"><strong>INT</strong> ' + data.intelligence  + ' ('+ getBonus(data.intelligence) +')</p>' +
-        '<p id = "WIS"><strong>WIS</strong> ' + data.wisdom  + ' ('+ getBonus(data.wisdom) +')</p>' + 
-        '<p id = "CHA"><strong>DEX</strong> ' + data.charisma  + ' ('+ getBonus(data.charisma) +')</p>';
-        document.getElementById('stats').innerHTML = stats +"<hr color='red'>";
-        document.getElementById('savingThrows').innerHTML = '';
+        let stats ='<p id = "STR"><strong>STR:</strong> ' + data.strength + ' ('+ getBonus(data.strength) +')</p>' + 
+        '<p id = "DEX"><strong>DEX:</strong> ' + data.dexterity  + ' ('+ getBonus(data.dexterity) +')</p>' + 
+        '<p id = "CON"><strong>CON:</strong> ' + data.constitution  + ' ('+ getBonus(data.constitution) +')</p>' + 
+        '<p id = "INT"><strong>INT:</strong> ' + data.intelligence  + ' ('+ getBonus(data.intelligence) +')</p>' +
+        '<p id = "WIS"><strong>WIS:</strong> ' + data.wisdom  + ' ('+ getBonus(data.wisdom) +')</p>' + 
+        '<p id = "CHA"><strong>CHA:</strong> ' + data.charisma  + ' ('+ getBonus(data.charisma) +')</p>';
+        document.getElementById('stats').innerHTML = stats;
+        document.getElementById('pt2hr').innerHTML = "<hr color='red'>"
+        document.getElementById('pt2').innerHTML = "<div id = 'savingThrows'></div><div><div id = 'damageVulnerabilities'></div><div id = 'damageResistances'></div><div id = 'damageImmunities'></div><div id = 'conditionImmunities'></div><div id = 'senses'></div><div id = 'languages'></div><div id = 'CR'></div></div></div>";
         data.proficiencies.forEach(obj => {
             document.getElementById('savingThrows').innerHTML += '<p>'+ obj.proficiency.name + ' (+' + obj.value + ")";            
         });

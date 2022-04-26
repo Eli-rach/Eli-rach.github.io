@@ -1,0 +1,69 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: modesto-condensed, serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( -18deg, #EDBF49  17%, #FEDB21  17% 20%, #d19808 20% 80%, #4D78CD 80% 83%, #538DFF 83% 100%);
+    overflow-x: hidden;
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( -18deg, #EDBF49 9.75%, #FEDB21  9.75% 11.5%, #d19808 11.5% 88.5%, #4D78CD 88.5% 90.25%, #538DFF 90.25% 100%);
+
+}
+
+h1{
+    font-size: 72px;
+}
+
+h2{
+    font-size: 48px;
+}
+h3{
+    font-size: 48px;
+}
+
+p{
+    font-size: 24px;
+}
+
+form{
+    font-size: 36px;
+}
+
+#stats{
+display: flex;
+flex-direction: row;
+}
+#stats > p{
+    padding-right: 2vw;
+}
+#pt2{
+    display: flex;
+    flex-direction: row;
+}
+
+#pt2 > div{
+    padding-right: 2vw;
+}
+
+#search, .result{
+    margin:10%;
+    padding: 5%;
+    background-color: rgb(255, 228, 110);
+}
+
+strong, h1, h2, h3{
+    color: rgb(232, 33, 33);
+    -webkit-text-stroke-width: .25px;
+  -webkit-text-stroke-color: black;
+}
+

@@ -4,40 +4,67 @@
     <meta charset="utf-8">
     <title>Monster Generator</title>
 
+    <link rel="stylesheet" href="https://use.typekit.net/idb0lho.css">
+    <link rel ="stylesheet" href ="css/D&D.css">
+    <link rel="stylesheet" href="css/menu.css">
   </head>
-  <body>
+  <body id =body>
+    <div id = "menuButton">
+      <div id = "nav1"></div>
+      <div id = "nav2"></div>
+      <div id = "nav3"></div>
+      <nav id="navBar" class = "hidden">
+          <a class = 'menu' id= "home" href = "index.html">Home</a>
+          <a class = 'menu' id = "about" href = "about.html">About</a>
+          <a class = 'menu' id = "projects" href = "projects.html">Projects</a>
+          <a class = 'menu' id = "contacts" href ="contact.html">Contact</a>
+          <a class = 'menu' id = "JSPage" href ="D&D.html">Monster Generator</a>
+    </nav>
+  </div>
     <div class="app">
-  <header>Random Monster Generator</header>
-  <form action="">
-    <label for="creatureName">Creature Name</label><br>
-    <input type="text" id="creatureName" name="creatureName" value="adult black dragon"><br>
-  </form> 
-  <section class="controls">
-    <button type="button" id="monsterButton">
-      Generate a D&D monster
-    </button>
-  </section>
-  <div id = 'monsterName'></div>
-  <div id = 'monsterType'></div>
+      <div id = "search">
+    <header><h1>Random Monster Generator</h1></header>
+    <form action="">
+      <label for="creatureName">Creature Name: </label>
+      <input type="text" id="creatureName" name="creatureName" value="adult black dragon"><br>
+    </form> 
+    <section class="controls">
+      <button type="button" id="monsterButton">
+        Generate a D&D monster
+      </button>
+    </section>
+    </div>
+    <div id="result">
+      <div id = 'monsterName'></div>
+      <div id = 'monsterType'></div>
 
-  <div id = 'AC'></div>
-  <div id = 'HP'></div>
-  <div id = 'speed'></div>
+      <div id = 'AC'></div>
+      <div id = 'HP'></div>
+      <div id = 'speed'></div>
 
-  <div id = 'stats'></div>
-
-  <div id = 'savingThrows'></div>
-  <div id = 'damageVulnerabilities'></div>
-  <div id = "damageResistances"></div>
-  <div id = 'damageImmunities'></div>
-  <div id = 'conditionImmunities'></div>
-  <div id = 'senses'></div>
-  <div id = 'languages'></div>
-  <div id = 'CR'></div>
-  <div id = 'skills'></div>
-  <div id = 'actions'></div>
-  <div id = 'LA'></div>
+      <div id = 'stats'></div>
+      <div id ="pt2hr"></div>
+      <div id = "pt2">
+      <div id = 'savingThrows'></div>
+      <div>
+        <div id = 'damageVulnerabilities'></div>
+        <div id = "damageResistances"></div>
+        <div id = 'damageImmunities'></div>
+        <div id = 'conditionImmunities'></div>
+        <div id = 'senses'></div>
+        <div id = 'languages'></div>
+        <div id = 'CR'></div>
+      </div>
+      </div>
+      
+      <div id = 'skills'></div>
+      <div id = 'actions'></div>
+      <div id = 'LA'></div>
+    </div>
+  </div>
 </div>
+
 <script src = "./js/monsterGenerator.js" charset="utf-8"></script>
+<script src = "js/menu.js"></script>
   </body>
 </html>

@@ -86,8 +86,12 @@
         grid-template-columns: 1fr 1fr;
     }
     
-    p{
-        margin-top:-12vh;
+    #text{
+        animation-duration: 1.2s;
+        animation-name: slidein2;
+    }
+
+    #text > p{
         font-size:4vh;
         transform: rotate(-18deg);
     }
@@ -103,10 +107,42 @@
     img{
         width: 75%;
         margin-left:6vw;
-        /* margin-top:  vh; */
         border-radius: 100%;
+        animation-duration: 1s;
+        animation-name: slidein1;
      
     }
 }
 
+
+
+@keyframes slidein1{
+    from {
+        margin-top: 100%;
+      }
+      
+    50%{
+        margin-top: -10%
+    }
+      to {
+        margin-top: 0%;
+      }
+}
+
+@keyframes slidein2{
+    from {
+        margin-top: 100%;
+    }
+
+    10%{
+        margin-top: 100%;
+    }
+      
+    60%{
+        margin-top: -10%
+    }
+      to {
+        margin-top: 0%;
+      }
+}
 
